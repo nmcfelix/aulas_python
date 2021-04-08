@@ -8,8 +8,7 @@ destination_folder = sys.argv[2]
 
 # Find all photos inside source directory
 img_list = []
-print(os.getcwd())
-for img in os.listdir(source_folder):
+for img in os.listdir(f"./{source_folder}"):
     if img.endswith(".jpg"):
         img_list.append(os.path.join(source_folder, img))
 
